@@ -95,9 +95,6 @@ st.pyplot(fig)
 
 fig, ax = plt.subplots()
 sns.scatterplot(x='Permit Creation Year', y='Number of Existing Stories', data=df, ax=ax, hue='Permit Type Definition')
-legend = ax.legend()
-for handle in legend.legendHandles:
-    handle._sizes = [30]
 ax.set_ylabel('Qavatlar soni')
 ax.set_xlabel('Yil')
 st.pyplot(fig)
